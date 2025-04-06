@@ -52,60 +52,63 @@
     <section class="billing-container">
       <div class="billing-left-part">
         <h2>Billing Details</h2>
-        <div class="biller-name-div">
-          <div class="first-name-box">
-            <p>First Name</p>
-            <div class="name-empty-box"></div>
+        <form id="billing-form">
+          <div class="biller-name-div">
+            <div class="first-name-box">
+              <p>First Name</p>
+              <input type="text" class="form-input name-input" required>
+            </div>
+            <div class="last-name-box">
+              <p>Last Name</p>
+              <input type="text" class="form-input name-input" required>
+            </div>
           </div>
-          <div class="last-name-box">
-            <p>Last Name</p>
-            <div class="name-empty-box"></div>
+          <div class="detail-box">
+            <p>Company Name (Optional)</p>
+            <input type="text" class="form-input">
           </div>
-        </div>
-        <div class="detail-box">
-          <p>Company Name (Optional)</p>
-          <div class="empty-box"></div>
-        </div>
-        <div class="detail-box">
-          <p>Country / Region</p>
-          <div class="empty-box">
-            <p>Sri Lanka</p>
-            <img src="image/go_down.png" alt="">
+          <div class="detail-box">
+            <p>Country / Region</p>
+            <select class="form-input select-input">
+              <option value="Sri Lanka">Sri Lanka</option>
+              <option value="Bangladesh">Bangladesh</option>
+              <option value="Pakistan">Pakistan</option>
+              <option value="USA">USA</option>
+            </select>
           </div>
-        </div>
-        <div class="detail-box">
-          <p>Street Address</p>
-          <div class="empty-box"></div>
-        </div>
-        <div class="detail-box">
-          <p>Town / City</p>
-          <div class="empty-box"></div>
-        </div>
-        <div class="detail-box">
-          <p>Province</p>
-          <div class="empty-box">
-            <p>Western Province</p>
-            <img src="image/go_down.png" alt="">
+          <div class="detail-box">
+            <p>Street Address</p>
+            <input type="text" class="form-input" required>
           </div>
-        </div>
-        <div class="detail-box">
-          <p>ZIP code</p>
-          <div class="empty-box"></div>
-        </div>
-        <div class="detail-box">
-          <p>Phone</p>
-          <div class="empty-box"></div>
-        </div>
-        <div class="detail-box">
-          <p>Email address</p>
-          <div class="empty-box"></div>
-        </div>
-        <div class="detail-box">
-          <p></p>
-          <div class="empty-box">
-            <p>Additional information</p>
+          <div class="detail-box">
+            <p>Town / City</p>
+            <input type="text" class="form-input" required>
           </div>
-        </div>
+          <div class="detail-box">
+            <p>Province</p>
+            <select class="form-input select-input">
+              <option value="Western Province">Western Province</option>
+              <option value="Central Province">Central Province</option>
+              <option value="Eastern Province">Eastern Province</option>
+            </select>
+          </div>
+          <div class="detail-box">
+            <p>ZIP code</p>
+            <input type="text" class="form-input" required>
+          </div>
+          <div class="detail-box">
+            <p>Phone</p>
+            <input type="tel" class="form-input" required>
+          </div>
+          <div class="detail-box">
+            <p>Email address</p>
+            <input type="email" class="form-input" required>
+          </div>
+          <div class="detail-box">
+            <p></p>
+            <textarea class="form-input text-area" placeholder="Additional information"></textarea>
+          </div>
+        </form>
       </div>
       <div class="billing-right-part">
         <div class="billing-right-upper-part">
